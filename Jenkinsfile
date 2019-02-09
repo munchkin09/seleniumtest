@@ -1,15 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh '''cd
 
 
-'''
-        git(url: 'https://github.com/munchkin09/seleniumtest', branch: 'master')
-        sh '''cd seleniumtest
-'''
+/var/lib/jenkins/workspace/seleniumtest_master'''
         sh '''npm install
 '''
         sh 'node test.js'
