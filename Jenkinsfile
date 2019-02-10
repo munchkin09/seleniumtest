@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd /var/lib/jenkins/workspace/seleniumtest_master'''
+        sh '''ls'''
         sh '''npm install'''
       }
     }
