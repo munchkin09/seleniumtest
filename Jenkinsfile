@@ -1,16 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Build') {
       steps {
-        sh '''cd
-
-
-/var/lib/jenkins/workspace/seleniumtest_master'''
-        sh '''npm install
-'''
-        sh 'node test.js'
+        sh '''cd /var/lib/jenkins/workspace/seleniumtest_master'''
+        sh '''npm install'''
       }
+    }
+    stage('Test') {
+      sh 'echo Testing...'
+      sh 'node test.js'
     }
   }
 }

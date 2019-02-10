@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/munchkin09/seleniumtest/issues"
   },
-  "homepage": "https://github.com/munchkin09/seleniumtest#readme"
+  "homepage": "https://github.com/munchkin09/seleniumtest#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
 }
